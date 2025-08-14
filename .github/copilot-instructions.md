@@ -2,6 +2,8 @@
 
 GitHub Codespaces environment with LLM CLI tool, Python 3.13, `uv` package manager, and GitHub Copilot VS Code extension for accessing GitHub Models API.
 
+**Recent Updates**: The development environment has been enhanced with Node.js and .NET support added to the devcontainer configuration for expanded development capabilities.
+
 **ALWAYS reference these instructions first and fallback to search or bash commands only when you encounter unexpected information that does not match the info here.**
 
 ## Working Effectively
@@ -84,6 +86,7 @@ ALWAYS test the complete workflow after making changes:
 ### Environment Details
 - **Python**: 3.13 (via devcontainer base image, but may be 3.12.x in some environments)
 - **Node.js**: v20+ (installed via devcontainer feature)
+- **.NET**: Latest version (installed via devcontainer feature)
 - **Package Manager**: `uv` for Python tools
 - **Main Tool**: `llm` CLI for accessing language models
 - **Plugin**: `llm-github-models` for GitHub Models API access
@@ -131,6 +134,11 @@ All dependencies are Python packages installed via `pip` and `uv`:
 - `uv`: Modern Python package installer
 - `llm`: CLI tool for accessing language models
 - `llm-github-models`: Plugin for GitHub Models integration
+
+**Development Environment Features**:
+- **Node.js**: Available for JavaScript/TypeScript development
+- **.NET**: Available for C#/.NET development
+- **Python 3.13**: Primary runtime environment
 
 ### Authentication Flow
 1. In Codespaces: GitHub token automatically available
