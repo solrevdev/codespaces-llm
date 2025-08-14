@@ -4,6 +4,16 @@
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/dotnet:1": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp"
+      ]
     }
   },
   "postCreateCommand": "pip install uv && uv tool install llm && llm install llm-github-models && llm models default github/gpt-4.1"
